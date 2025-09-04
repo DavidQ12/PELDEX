@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/PELDEX/static/css/main.6f3d344e.css",
+    "main.js": "/PELDEX/static/js/main.e77e37c6.js",
+    "static/js/453.670e15c7.chunk.js": "/PELDEX/static/js/453.670e15c7.chunk.js",
+    "static/media/sushi.jpg": "/PELDEX/static/media/sushi.4c3d0ee4bf5dd5ccd6ec.jpg",
+    "static/media/asado.jpg": "/PELDEX/static/media/asado.511cef8c556e326fb50b.jpg",
+    "static/media/bebidas.jpg": "/PELDEX/static/media/bebidas.ec3ba86145b43b4baffd.jpg",
+    "static/media/pizza.jpg": "/PELDEX/static/media/pizza.d3e04f61cd010a300ad8.jpg",
+    "static/media/cafe.jpg": "/PELDEX/static/media/cafe.23ef1deb8b6cbf2a2d3b.jpg",
+    "static/media/hamburguesa.jpg": "/PELDEX/static/media/hamburguesa.cbc3c3d34520b915a82e.jpg",
+    "static/media/ensaladas.jpg": "/PELDEX/static/media/ensaladas.9e7283c2d7ecd2426f25.jpg",
+    "index.html": "/PELDEX/index.html",
+    "main.6f3d344e.css.map": "/PELDEX/static/css/main.6f3d344e.css.map",
+    "main.e77e37c6.js.map": "/PELDEX/static/js/main.e77e37c6.js.map",
+    "453.670e15c7.chunk.js.map": "/PELDEX/static/js/453.670e15c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f3d344e.css",
+    "static/js/main.e77e37c6.js"
+  ]
+}
