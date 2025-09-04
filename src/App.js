@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // <-- import Router
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Categories from "./components/Categories";
 import Restaurants from "./components/Restaurants";
 import AppDownload from "./components/AppDownload";
+import Restaurantes from "./pages/Restaurantes";
+
 
 // Datos de categorías con imágenes
 import pizzaImg from "./images/pizza.jpg";
@@ -54,17 +57,34 @@ const restaurants = [
   },
 ];
 
+
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <Hero searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <Categories categories={categories} />
-      <Restaurants restaurants={restaurants} />
-      <AppDownload />
-    </div>
+    <Router>
+      <Header /> {/* Aquí el botón de Restaurantes se enlazará con la ruta */}
+      <Routes>
+        {/* Página principal */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+              <Categories categories={categories} />
+              <Restaurants restaurants={restaurants} />
+              <AppDownload />
+            </>
+          }
+        />
+
+        {/* Página independiente de restaurantes - CORREGIDO */}
+        <Route
+          path="/restaurantes"  // Cambiado a "/restaurantes" (con / y en español)
+          element={<Restaurantes />}  // Usando el componente de página
+        />
+      </Routes>
+    </Router>
   );
 }
 
